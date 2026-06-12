@@ -11,17 +11,42 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yourcompany.notitiaapp",
+      "buildNumber": "1.0.0"
     },
     "android": {
+      "package": "com.yourcompany.notitiaapp",
+      "versionCode": 1,
+      "permissions": [
+        "INTERNET",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "VIBRATE",
+        "SYSTEM_ALERT_WINDOW"
+      ],
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "favicon": "./assets/favicon.png",
+      "config": {
+        "googleSignIn": {
+          "clientId": "1087137037590-p4pphli38ol0qa6ieoeko25r0bq0k5a7.apps.googleusercontent.com"
+        }
+      }
+    },
+    "description": "A news application",
+    "platforms": ["ios", "android", "web"],
+    "scheme": "notitiaapp"
   }
 }

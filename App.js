@@ -1,20 +1,41 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+// App.js
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import SplashScreen from './screens/SplashScreen';
+import WelcomeScreen from './screens/WelcomeScreen';
+import InfoScreen from './screens/InfoScreen';
+import LoginScreen from './screens/LoginScreen';
+import HomeScreen from './screens/HomeScreen';
+import FavoritesScreen from './screens/FavoritesScreen';
+import UserSettingsScreen from './screens/UserSettingsScreen';
+import ChangePasswordScreen from './screens/ChangePasswordScreen';
+
+const Stack = createStackNavigator();
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator 
+        initialRouteName="SplashScreen"
+        screenOptions={{
+          gestureEnabled: true,
+          cardStyleInterpolator: ({ current }) => ({
+            cardStyle: {
+              opacity: current.progress,
+            },
+          }),
+        }}
+      >
+        <Stack.Screen name="SplashScreen" component={SplashScreen} options={{ headerShown: false }} />
+        <Stack.Screen name="WelcomeScreen" component={WelcomeScreen} options={{ headerShown: false }} />
+        <Stack.Screen name="InfoScreen" component={InfoScreen} options={{ headerShown: false }} />
+        <Stack.Screen name="LoginScreen" component={LoginScreen} options={{ headerShown: false }} />
+        <Stack.Screen name="HomeScreen" component={HomeScreen} options={{ title: 'Ana Sayfa' }} />
+        <Stack.Screen name="FavoritesScreen" component={FavoritesScreen} options={{ title: 'Favori Haber Sitelerim' }} />
+        <Stack.Screen name="UserSettingsScreen" component={UserSettingsScreen} options={{ title: 'Kullanıcı Ayarları' }} />
+        <Stack.Screen name="ChangePasswordScreen" component={ChangePasswordScreen} options={{ title: 'Şifre Değiştir' }} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

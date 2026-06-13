@@ -1,17 +1,13 @@
 # Notitia Mobile App
 
 <p align="center">
-  <img src="./assets/icon.png" width="120" height="120" alt="Notitia Logo" style="border-radius: 20%;" />
-</p>
-
-<p align="center">
   <a href="#english">English</a> | <a href="#türkçe">Türkçe</a>
 </p>
 
 ---
 
 <a id="english"></a>
-# 🇬🇧 English
+# English
 
 Notitia is a modern, high-fidelity React Native mobile application built with Expo and Firebase. The application is designed to act as a centralized news aggregator, enabling users to quickly access various news portals under organized categories, manage a persistent personalized favorites list, and manage their user profiles securely.
 
@@ -117,7 +113,7 @@ EXPO_PUBLIC_GOOGLE_CLIENT_ID=your_google_client_id
 ---
 
 <a id="türkçe"></a>
-# 🇹🇷 Türkçe
+# Türkçe
 
 Notitia, Expo ve Firebase kullanılarak geliştirilmiş, modern ve yüksek doğruluklu (high-fidelity) bir React Native mobil uygulamasıdır. Uygulama, kullanıcıların organize edilmiş kategoriler altındaki çeşitli haber portallarına hızlı bir şekilde erişmesini, kişiselleştirilmiş sık kullanılanlar (favoriler) listesini yönetmesini ve kullanıcı profillerini güvenli bir şekilde yönetmesini sağlayan merkezi bir haber toplayıcı olarak tasarlanmıştır.
 

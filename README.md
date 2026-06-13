@@ -1,7 +1,20 @@
-# Notitia Mobile App
+# 📰 Notitia - Mobile News Application
 
 <p align="center">
-  <a href="#english">English</a> | <a href="#türkçe">Türkçe</a>
+  <a href="#english">
+    <img src="https://img.shields.io/badge/LANGUAGE-ENGLISH-blue?style=for-the-badge&logo=google-translate" alt="English" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="#türkçe">
+    <img src="https://img.shields.io/badge/DIL-T%C3%9CRK%C3%87E-red?style=for-the-badge&logo=google-translate" alt="Türkçe" />
+  </a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Framework-React_Native_0.74.2-blue?style=flat-square&logo=react" alt="React Native" />
+  <img src="https://img.shields.io/badge/Platform-Expo_SDK_51-000?style=flat-square&logo=expo" alt="Expo" />
+  <img src="https://img.shields.io/badge/Backend-Firebase_v10-orange?style=flat-square&logo=firebase" alt="Firebase" />
+  <img src="https://img.shields.io/badge/Database-Firestore-FFCA28?style=flat-square&logo=firebase&logoColor=black" alt="Firestore" />
 </p>
 
 ---
